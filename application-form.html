@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Application Form</title>
+  </head>
+  <body>
+    <form action="/application-success.html" class="application" method="POST">
+      <h2 class="application-heading">Complete This Application</h2>
+      <p> Want to work here? Please complete this application and submit.
+      <div class="first-name">
+        <label for="first-name">First Name:  </label>
+        <input type="text">
+      </div>
+      <div class="last-name">
+        <label for="last-name">Last Name:  </label>
+        <input type="text">
+      </div>
+      <div class="salary-requirement">
+        <label for="salary-requirement">Salary Requirement:  </label>
+        <input type="number" min="0.01" step="0.01">
+      </div>
+      <div class="position">
+        <label for="position">Select which job you are applying for:  </label>
+        <select name="job">
+        <option value="software">Software Engineer</option>
+        <option value="qa">QA Engineer</option>
+        <option value="pm">Product Manager</option>
+      </select>
+      <br>
+      </div>
+      <div class="submit">
+        <label for="submit"><input type="submit">
+    </form>
+  </body>
+</html>
